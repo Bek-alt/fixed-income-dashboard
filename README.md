@@ -36,6 +36,7 @@ cp config_template.py config.py
 streamlit run app.py
 
 ## Project Structure
+```
 fixed-income-dashboard/
 ├── src/
 │   ├── data_fetcher.py   # FRED API connection and data pipeline
@@ -43,6 +44,7 @@ fixed-income-dashboard/
 ├── app.py                # Streamlit dashboard
 ├── config_template.py    # API key template
 └── requirements.txt      # Dependencies
+```
 
 ## Key Concepts
 - **Yield Spread:** Difference between long and short term treasury yields
