@@ -1,0 +1,6 @@
+fredapi
+pandas
+streamlit
+plotly
+requests
+certifi

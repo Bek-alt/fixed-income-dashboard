@@ -1,0 +1,16 @@
+# Environment
+.env
+config.py
+
+# Data cache (no need to push raw data)
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Virtual environments
+venv/
+.env/
