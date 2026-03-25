@@ -4,6 +4,7 @@ A web-based analytics dashboard for US Treasury yield curve analysis,
 built with Python, Streamlit, and the FRED API.
 
 ## Features
+
 - Live US Treasury yield data (3M, 2Y, 5Y, 10Y, 30Y)
 - Yield curve shape classification (Normal / Flat / Inverted / Fully Inverted)
 - Recession signal indicator based on 10Y-2Y spread inversion
@@ -13,27 +14,36 @@ built with Python, Streamlit, and the FRED API.
 - Interactive Plotly charts with date range filtering
 
 ## Tech Stack
+
 - **Data:** FRED API (Federal Reserve Economic Data)
 - **Analysis:** Python, pandas, NumPy
 - **Dashboard:** Streamlit, Plotly
-- **Deployment:** Local / Streamlit Cloud
 
 ## Setup
 
 ### 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/fixed-income-dashboard.git
+```bash
+git clone https://github.com/bek-alt/fixed-income-dashboard.git
 cd fixed-income-dashboard
+```
 
 ### 2. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 3. Configure API key
+```bash
 cp config_template.py config.py
-# Edit config.py and add your FRED API key
-# Get a free key at: https://fred.stlouisfed.org/docs/api/api_key.html
+```
+
+Then open `config.py` and add your FRED API key.
+Get a free key at: https://fred.stlouisfed.org/docs/api/api_key.html
 
 ### 4. Run the dashboard
+```bash
 streamlit run app.py
+```
 
 ## Project Structure
 ```
@@ -47,11 +57,13 @@ fixed-income-dashboard/
 ```
 
 ## Key Concepts
+
 - **Yield Spread:** Difference between long and short term treasury yields
 - **Curve Inversion:** When short-term yields exceed long-term yields
 - **Recession Signal:** 10Y-2Y inversion has preceded every US recession since 1955
 - **Z-Score:** Measures how unusual current spreads are vs 1-year history
 
 ## Author
+
 Built as a Fixed Income analytics project inspired by
 Business Analytics Strategist roles in financial services.
